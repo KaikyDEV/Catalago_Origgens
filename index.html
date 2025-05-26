@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origgens - Produtos Naturais</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌿 Origgens</h1>
+            <p class="subtitle">Produtos Naturais para sua Saúde e Bem-estar</p>
+        </header>
+
+        <div class="search-section">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="🔍 Busque por produto, benefício ou categoria...">
+            </div>
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="todos">Todos</button>
+                <button class="filter-btn" data-category="chás">Chás Medicinais</button>
+                <button class="filter-btn" data-category="farinhas">Farinhas & Grãos</button>
+                <button class="filter-btn" data-category="temperos">Temperos</button>
+                <button class="filter-btn" data-category="suplementos">Suplementos</button>
+                <button class="filter-btn" data-category="óleos">Óleos Essenciais</button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number" id="totalProducts">0</div>
+                <div class="stat-label">Produtos Disponíveis</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="visibleProducts">0</div>
+                <div class="stat-label">Produtos Exibidos</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Produtos Naturais</div>
+            </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+            <!-- Produtos serão inseridos aqui via JavaScript -->
+        </div>
+
+        <div class="no-results" id="noResults" style="display: none;">
+            <h3>🔍 Nenhum produto encontrado</h3>
+            <p>Tente buscar por outros termos ou verifique a categoria selecionada.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Origgens - Produtos Naturais | Catálogo atualizado em 25/05/2024</p>
+        <p>✨ Cuidando da sua saúde com produtos 100% naturais</p>
+    </footer>
+
+</body>
+</html>
